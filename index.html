@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+    <title>Church of Fonz</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="jquery-3.1.1.js"></script>
+    <script src="scripts.js"></script>
+    <script>$(document).ready(function(){});</script>
+</head>
+<body>
+    <header>
+        <div id="title">CHURCH <span class="pnkTxt">OF</span> FONZ</div>
+        <div id="nav-container">
+            <div class="nav-cell" id="homebutton">HOME</div>
+            <div class="nav-cell" id="sermonsbutton">SERMONS</div>
+            <div class="nav-cell" id="givebutton">GIVE</div>
+            <div class="nav-cell" id="mediabutton">MEDIA</div>
+            <div class="nav-cell" id="joinbutton">JOIN US</div>
+        </div>
+    </header>
+    
+    <div id="home" class="page">
+        <div id="coolpic"><img src="images/thefonziscool.jpg"></div>
+        <div id="welcome">"AYYY" from the Church of Fonz</div><br>
+        <div id="events-list">Upcoming Events:
+            <ul style="list-style:none;">
+                <li>Today - Storytime with Grandma Nussbaum @ 1pm</li>
+                <li>Today - Evening Mass @ 8pm</li>
+                <li>Tomorrow - Annual "Jumping of the Shark" Reenactment @ 11am</li>
+            </ul>
+        </div>
+        
+    </div>
+    
+    <div id="sermons" class="page">
+        <h1> THE WORD OF THE FONZ</h1>
+        <form action="javascript:chooseExcerpt();" id="excerptform">
+            <select name="excerpts">
+                <option value="w1">Guess Who's Coming to Visit [1.04]</option>
+                <option value="w2">Fonzie Drops In [1.07]</option>
+                <option value="w3">The Best Man [1.14]</option>
+                <option value="w4">Knock Around the Block [1.15]</option>
+                <option value="w5">Be the First on Your Block [1.16]</option>
+                <option value="w6">Richie's Car [2.02]</option>
+                <option value="w7">Who's Sorry Now? [2.03]</option>
+                <option value="w8">Haunted [2.06]</option>
+                <option value="w9">A Star Is Bored [2.10]</option>
+                <option value="w10">Guess Who's Coming to Christmas [2.11]</option>
+                <option value="w11">Open House [2.12]</option>
+                <option value="w12">Fonzie Joins the Band [2.19]</option>
+                <option value="w13">Richie's Flip Side [2.21]</option>
+            </select>
+            <input type="submit">
+        </form>
+        <div id="excerpt"><span id="choose">Please select an excerpt from the Word of the Fonz.</span></div>
+        
+    </div>
+    
+    <div id="give" class="page">
+            <img src="images/whatwouldfonziedo.png" alt="What Would Fonzie Do" style="float:left;"><br><br>
+    
+        <p> 
+            <a href="https://www.redbubble.com/shop/the+fonz" target="_blank">Shop any Fonzie merch</a> and 30% of all proceeds go towards the Church of Fonz.<br><br> 
+            To donate directly to the Church, please enter your credit card info below:<br>
+            <form action="javascript:ccPay();" id="payform">
+                Amount: <input type="text" placeholder="$#######.##" name="amt">
+                Name: <input type="text" placeholder="First" name="fname"> <input type="text" placeholder="Last" name="lname"><br><br>
+                Card Number <input type="text" placeholder="################" name="ccnum"><br><br>
+                Exp Date <select name="day"><option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option>
+                </select><select name="month"><option>JAN</option><option>FEB</option><option>MAR</option><option>APR</option><option>MAY</option><option>JUN</option><option>JUL</option><option>AUG</option><option>SEP</option><option>OCT</option><option>NOV</option><option>DEC</option></select><br><br>
+                Security Code <input type="text" placeholder="###" name="sec">
+                Zip Code <input type="text" placeholder="#####" name="zip"> <input type="submit">
+            </form>
+        
+        </p> 
+    
+    </div>
+    
+    <div id="media" class="page">
+        <div id="videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yyzK6e6py9A" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/H2i0QWXvOn0" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1LCJrtuV9bE" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/t4ZGKI8vpcg" frameborder="0" allowfullscreen></iframe> 
+        </div>    
+    </div>
+    
+    <div id="join" class="page">
+        <p>Join us at one of our regular meetings in the men's room at Al's.</p><br>
+        <div id="calendar">
+            <table>
+                <tr id="month"><td colspan=7><h1>OCTOBER 2016</h1></td></tr>
+                <tr id="weekdays">
+                    <td>Sunday</td>
+                    <td>Monday</td>
+                    <td>Tuesday</td>
+                    <td>Wednesday</td>
+                    <td>Thursday</td>
+                    <td>Friday</td>
+                    <td>Saturday</td>
+                </tr>
+                <tr class="days" id="week1">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                </tr>
+                <tr class="events" id="events1">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>8am - 12pm: Al's Pancake Breakfast and Sermon</td>
+                </tr>
+                <tr class="days" id="week2">
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr class="events" id="events2">
+                    <td>9am: Mass of the Fonz</td>
+                    <td></td>
+                    <td>5pm-6pm: Pink's Hour of Empowerment</td>
+                    <td>6pm-7:30pm: Fonzie Study Evenings </td>
+                    <td>3pm: Softball Game  </td>
+                    <td>1pm: Storytime with Grandma Nussbaum<br>8pm Evening mass</td>
+                    <td>6pm-10pm: Sockhop</td>
+                </tr>
+                <tr class="days" id="week3">
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                </tr>
+                <tr class="events" id="events3">
+                    <td>9am: Mass of the Fonz</td>
+                    <td></td>
+                    <td>5pm-6pm: Pink's Hour of Empowerment</td>
+                    <td>6pm-7:30pm: Fonzie Study Evenings </td>
+                    <td>3pm: Softball Game <br>8pm Knights of Columbus</td>
+                    <td>1pm: Storytime with Grandma Nussbaum<br>8pm Evening mass</td>
+                    <td>All Day: 'Everyone Should Read' Fair</td>
+                </tr>
+                <tr class="days" id="week4">
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                </tr>
+                <tr class="events" id="events4">
+                    <td>9am: Mass of the Fonz</td>
+                    <td></td>
+                    <td>5pm-6pm: Pink's Hour of Empowerment</td>
+                    <td>6pm-7:30pm: Fonzie Study Evenings </td>
+                    <td>3pm: Softball Game</td>
+                    <td>1pm: Storytime with Grandma Nussbaum<br>8pm Evening mass</td>
+                    <td>11am: Annual "Jumping of the Shark" Reenactment</td>
+                </tr>
+                <tr class="days" id="week5">
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                </tr>
+                <tr class="events" id="events5">
+                    <td>9am: Mass of the Fonz</td>
+                    <td></td>
+                    <td>5pm-6pm: Pink's Hour of Empowerment</td>
+                    <td>3pm: Softball Game<br>8pm Knights of Columbus</td>
+                    <td></td>
+                    <td>1pm: Storytime with Grandma Nussbaum<br>8pm Evening mass</td>
+                    <td>8am - 12pm: Al's Pancake Breakfast and Sermon</td>
+                </tr>
+                <tr class="days" id="week6">
+                    <td>30</td>
+                    <td>31</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="events" id="events6">
+                    <td>9am: Mass of the Fonz</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    
+    </div>
+    
+</body>
+
+
+</html>

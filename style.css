@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'neon';
+  src: url("fonts/hellodenverdisplayregular_v1.6.eot");
+  src: url("fonts/hellodenverdisplayregular_v1.6.eot?#iefix") format("embedded-opentype"), url("fonts/hellodenverdisplayregular_v1.6.woff") format("woff"), url("fonts/hellodenverdisplayregular_v1.6.ttf") format("truetype"), url("fonts/hellodenverdisplayregular_v1.6.svg#HELLODENVERDISPLAYREGULARRg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  background-image: url(images/statue.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: black;
+  height: 100%;
+  font-family: sans-serif; }
+  body header {
+    color: #66b3ff;
+    margin: none;
+    font-size: 40px;
+    font-family: 'neon';
+    text-align: center; }
+    body header #title {
+      box-sizing: border-box;
+      display: inline-block;
+      position: absolute;
+      padding: 5px;
+      top: 130px;
+      left: 55%;
+      text-align: center;
+      background-color: black;
+      vertical-align: center;
+      border-radius: 15px; }
+    body header #nav-container {
+      box-sizing: border-box;
+      position: absolute;
+      width: 100%;
+      top: 325px;
+      align-content: center;
+      left: 0%; }
+      body header #nav-container .nav-cell {
+        display: inline-block;
+        font-size: 22px;
+        background-color: black;
+        position: relative;
+        width: 20%;
+        list-style: none;
+        float: left;
+        box-sizing: border-box;
+        cursor: pointer;
+        color: #66b3ff;
+        border: 1px solid #ff80b3;
+        padding: 6px; }
+      body header #nav-container .nav-cell:hover {
+        color: #ff80b3;
+        border-color: #66b3ff; }
+  body .page {
+    position: relative;
+    width: 100%;
+    display: none;
+    top: 360px;
+    left: 0%;
+    color: white;
+    height: 440px; }
+  body #home #coolpic {
+    display: inline-block;
+    float: left;
+    height: 100%; }
+  body #home #welcome {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px; }
+  body #home #events-list {
+    position: relative;
+    padding: 10px; }
+  body #sermons .fonz {
+    color: #66b3ff; }
+  body #sermons h1 {
+    align-content: center;
+    color: #ff80b3;
+    text-align: center;
+    font-family: 'neon';
+    position: relative;
+    height: 5%; }
+  body #sermons form {
+    padding: 30px;
+    display: inline-block; }
+  body #sermons #excerpt {
+    padding: 30px;
+    color: white;
+    line-height: 20px; }
+  body #give p {
+    text-align: center;
+    font-size: 20px;
+    padding: 30px; }
+  body #media #videos {
+    text-align: center; }
+  body #join {
+    font-size: 20px;
+    overflow: scroll; }
+    body #join #calendar {
+      width: 100%;
+      position: relative; }
+      body #join #calendar table {
+        position: relative;
+        width: 100%;
+        color: white;
+        font-size: 15px;
+        border: 1px solid white; }
+        body #join #calendar table tr td {
+          border-top: 1px solid #66b3ff;
+          width: 100px;
+          font-size: 10px; }
+        body #join #calendar table #month td {
+          font-size: 15px;
+          font-family: 'neon';
+          text-align: center; }
+        body #join #calendar table #weekdays {
+          height: 30px;
+          text-align: center; }
+        body #join #calendar table .days td {
+          height: 20px;
+          text-align: right; }
+        body #join #calendar table .events td {
+          height: 100px;
+          border: none; }
+  body .pnkTxt {
+    color: #ff80b3; }
+  body a {
+    color: #ff80b3; }
+
+/*# sourceMappingURL=style.css.map */
